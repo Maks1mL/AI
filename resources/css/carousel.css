@@ -1,0 +1,14 @@
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Use the CSS variable for the scroll distance */
+      transform: translateX(calc(-1 * var(--scroll-distance)));
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  

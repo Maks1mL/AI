@@ -1,0 +1,115 @@
+/* Basic reset and page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 20px;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.invoice-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.company-info {
+    text-align: right;
+    color: #999; /* Light gray color for the top-right title/brand */
+    font-size: 24px;
+}
+
+/* Invoice details */
+.invoice-details,
+.bill-to {
+    margin-bottom: 20px;
+}
+
+.invoice-details div,
+.bill-to div {
+    margin-bottom: 4px;
+}
+
+.invoice-details-title {
+    font-weight: bold;
+}
+
+.section-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-group > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Amount due area */
+.amount-due {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pay-online {
+    margin-bottom: 30px;
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+}
+
+td {
+    padding: 8px 0;
+}
+
+tfoot tr td {
+    padding-top: 6px;
+    font-weight: bold;
+}
+
+.subtotal-row,
+.total-row,
+.amount-due-row {
+    text-align: right;
+}
+
+/* Footer */
+.invoice-footer {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    left: 40px;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: #918f8f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

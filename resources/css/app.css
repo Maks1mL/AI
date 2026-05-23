@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .scrollbar-hide {
+      /* For IE, Edge */
+      -ms-overflow-style: none;
+      /* For Firefox */
+      scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      /* For Chrome, Safari, and Opera */
+      display: none;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+  }
+
+  @layer base{
+    td {
+      padding: 0px;
+    }
+  }
+
+
+  .ql-toolbar.ql-snow {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+
+  /* Custom scrollbar for WebKit browsers */
+*::-webkit-scrollbar {
+  width: 4px;  /* Set scrollbar width */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dddada; /* Color of scrollbar */
+  border-radius: 10px; /* Rounded edges */
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff; /* Track background */
+}
+
+/* Custom Scrollbar for form sections */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #eef0f2;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d5d9e0;
+}
+
+/* Editor class ===============*/
+/* =======================
+   Global Text Styling 
+   ======================= */
+   .ql-editor {
+    font-family: "Inter", sans-serif;
+    line-height: 1.8;
+    color: #2a2a2a;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* =======================
+   Headings Styling 
+   ======================= */
+.ql-editor h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+}
+
+.ql-editor h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 0.8rem;
+    padding-left: 10px;
+}
+
+.ql-editor h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 0.7rem;
+}
+
+.ql-editor h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #718096;
+    margin-bottom: 0.6rem;
+}
+
+.ql-editor h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #a0aec0;
+    margin-bottom: 0.5rem;
+}
+
+.ql-editor h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #cbd5e0;
+    margin-bottom: 0.4rem;
+}
+
+/* =======================
+   Paragraph & Text Styles
+   ======================= */
+.ql-editor p {
+    font-size: 1rem;
+    color: #2a2a2a;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* =======================
+   Links Styling
+   ======================= */
+.ql-editor a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.ql-editor a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* =======================
+   Lists Styling
+   ======================= */
+.ql-editor ul {
+    list-style-type: disc;
+    margin-left: 1.8rem;
+    padding-left: 10px;
+}
+
+.ql-editor ol {
+    list-style-type: decimal;
+    margin-left: 1.8rem;
+    padding-left: 10px;
+}
+
+.ql-editor ul li,
+.ql-editor ol li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* =======================
+   Blockquote Styling 
+   ======================= */
+.ql-editor blockquote {
+    padding-left: 1rem;
+    font-style: italic;
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
+/* =======================
+   Code Block Styling 
+   ======================= */
+.ql-editor pre {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+.ql-editor code {
+    background-color: #f1f1f1;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 0.95rem;
+    color: #d63384;
+}
+
+/* =======================
+   Image Styling
+   ======================= */
+.ql-editor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================
+   Table Styling
+   ======================= */
+.ql-editor table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.ql-editor table th,
+.ql-editor table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.ql-editor table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* =======================
+   Responsive Design 
+   ======================= */
+@media (max-width: 768px) {
+    .ql-editor h1 {
+        font-size: 2rem;
+    }
+
+    .ql-editor h2 {
+        font-size: 1.75rem;
+    }
+
+    .ql-editor h3 {
+        font-size: 1.5rem;
+    }
+
+    .ql-editor p {
+        font-size: 0.95rem;
+    }
+
+    .ql-editor blockquote {
+        font-size: 0.9rem;
+    }
+
+    .ql-editor pre {
+        font-size: 0.85rem;
+    }
+}

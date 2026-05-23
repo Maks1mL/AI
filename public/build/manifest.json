@@ -1,0 +1,55 @@
+{
+  "node_modules/quill/quill.js": {
+    "file": "assets/quill-5UIdPzrj.js",
+    "name": "quill",
+    "src": "node_modules/quill/quill.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "public/images/Astronaut exploring an alien planet with two moons.png": {
+    "file": "assets/Astronaut exploring an alien planet with two moons-BX6DGgvE.png",
+    "src": "public/images/Astronaut exploring an alien planet with two moons.png"
+  },
+  "public/images/Cyberpunk character with neon implants in a rainy alley.jpg": {
+    "file": "assets/Cyberpunk character with neon implants in a rainy alley-cau5FvTd.jpg",
+    "src": "public/images/Cyberpunk character with neon implants in a rainy alley.jpg"
+  },
+  "public/images/Deep sea bioluminescent creatures in an underwater cave.png": {
+    "file": "assets/Deep sea bioluminescent creatures in an underwater cave-I28kblbP.png",
+    "src": "public/images/Deep sea bioluminescent creatures in an underwater cave.png"
+  },
+  "public/images/Enchanted forest with magical creatures and glowing plants.jpg": {
+    "file": "assets/Enchanted forest with magical creatures and glowing plants-B8iOZm-j.jpg",
+    "src": "public/images/Enchanted forest with magical creatures and glowing plants.jpg"
+  },
+  "public/images/Fantasy dragon perched on a castle tower at sunset.png": {
+    "file": "assets/Fantasy dragon perched on a castle tower at sunset-DGACTDab.png",
+    "src": "public/images/Fantasy dragon perched on a castle tower at sunset.png"
+  },
+  "public/images/Futuristic city.png": {
+    "file": "assets/Futuristic city-uKme33Dv.png",
+    "src": "public/images/Futuristic city.png"
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-CPdZMZEe.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/quill/quill.js"
+    ],
+    "css": [
+      "assets/app-TzyFmSRk.css"
+    ],
+    "assets": [
+      "assets/Futuristic city-uKme33Dv.png",
+      "assets/Fantasy dragon perched on a castle tower at sunset-DGACTDab.png",
+      "assets/Deep sea bioluminescent creatures in an underwater cave-I28kblbP.png",
+      "assets/Astronaut exploring an alien planet with two moons-BX6DGgvE.png",
+      "assets/Cyberpunk character with neon implants in a rainy alley-cau5FvTd.jpg",
+      "assets/Enchanted forest with magical creatures and glowing plants-B8iOZm-j.jpg"
+    ]
+  }
+}
